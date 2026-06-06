@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NITHISH_KS :: PORTFOLIO_OS v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Bebas+Neue&family=Oxanium:wght@200..800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- cursor -->
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- ════════════════ BIOS ════════════════ -->
+<div id="bios">
+  <div class="bios-line" id="b0"><span class="bios-cyan">NKS/UEFI BIOS v4.0.2 Release 6.0</span></div>
+  <div class="bios-line" id="b1">Copyright (C) 2024 NKS Technologies, Inc. All Rights Reserved.</div>
+  <div class="bios-line" id="b2" style="margin-top:16px;">CPU: <span class="bios-green">NKS Cortex-G7 @ 3.60 GHz &nbsp;&nbsp; Cores: 8 &nbsp;&nbsp; Threads: 16</span></div>
+  <div class="bios-line" id="b3">RAM: <span class="bios-green">16384 MB DDR5 4800MHz ... OK</span></div>
+  <div class="bios-line" id="b4">Storage: <span class="bios-green">NVMe SSD 512GB ... DETECTED</span></div>
+  <div class="bios-line" id="b5" style="margin-top:12px;">Initializing hardware... <span class="bios-green">OK</span></div>
+  <div class="bios-line" id="b6">Loading PORTFOLIO_OS kernel ................ <span class="bios-green">OK</span></div>
+  <div class="bios-line" id="b7">Mounting filesystems ........................ <span class="bios-green">OK</span></div>
+  <div class="bios-line" id="b8">Starting display manager .................... <span class="bios-green">OK</span></div>
+  <div class="bios-line" id="b9" style="margin-top:12px;color:#fff;font-size:14px;">
+    <span class="bios-amber">▶</span> Launching PORTFOLIO_OS for <span class="bios-green">NITHISH K.S</span>...
+  </div>
+  <div class="bios-bar-wrap bios-line" id="b10">
+    <div class="bios-bar-label">BOOT PROGRESS</div>
+    <div class="bios-bar"><div class="bios-bar-fill" id="boot-fill"></div></div>
+  </div>
+</div>
+
+<!-- ════════════════ NAVBAR ════════════════ -->
+<nav id="navbar">
+  <span class="nav-logo">NKS_OS</span>
+  <span class="nav-sep">|</span>
+  <div class="nav-links">
+    <a href="#hero"       class="nav-link">home</a>
+    <a href="#skills"     class="nav-link">skills</a>
+    <a href="#experience" class="nav-link">experience</a>
+    <a href="#projects"   class="nav-link">projects</a>
+    <a href="#contact"    class="nav-link">contact</a>
+  </div>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    <span style="color:var(--green);font-size:11px;">ONLINE</span>
+    <span id="live-clock"></span>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span>// </span>USER@PORTFOLIO_OS<span>:</span>~<span>$</span>
+        </div>
+        <h1 class="hero-name glitch" data-text="NITHISH K.S">NITHISH K.S</h1>
+        <div class="hero-role">FULL STACK DEVELOPER</div>
+        <p class="hero-desc">
+          Motivated ECE undergraduate and aspiring Full Stack Developer
+          passionate about Java, web technologies, and database systems.
+          Seeking a growth-oriented role to apply skills and gain hands-on experience.
+        </p>
+        <div class="hero-links">
+          <a href="#contact" class="btn btn-primary">./contact.sh</a>
+          <a href="https://www.linkedin.com/in/nithish-ks-277b702a6" target="_blank" class="btn btn-ghost">linkedin --open</a>
+          <a href="#projects" class="btn btn-ghost">ls projects/</a>
+        </div>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-num">7.9</div>
+            <div class="stat-lbl">CGPA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">8+</div>
+            <div class="stat-lbl">SKILLS</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2026</div>
+            <div class="stat-lbl">GRAD YEAR</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="terminal-box">
+          <div class="terminal-titlebar">
+            <div class="tb-dot tb-dot-r"></div>
+            <div class="tb-dot tb-dot-y"></div>
+            <div class="tb-dot tb-dot-g"></div>
+            <span class="terminal-title">nithish@portfolio:~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">nithish</span><span style="color:var(--text2)">@</span><span class="t-path">portfolio</span><span style="color:var(--text2)">:~$</span> <span class="t-cmd">cat whoami.json</span></div>
+            <div class="t-line t-out">{</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-val">"Nithish K.S"</span>,</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"Full Stack Developer"</span>,</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"education"</span>: <span class="t-val">"BE ECE, Anna University"</span>,</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"cgpa"</span>: <span class="t-val">7.9</span>,</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">"<span style="color:var(--green)">available_to_hire</span>"</span>,</div>
+            <div class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"email"</span>: <span class="t-val">"ksn2425@gmail.com"</span></div>
+            <div class="t-line t-out">}</div>
+            <div class="t-line" style="margin-top:12px;"><span class="t-prompt">nithish</span><span style="color:var(--text2)">@</span><span class="t-path">portfolio</span><span style="color:var(--text2)">:~$</span> <span id="typed-output"></span><span class="cursor-blink"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ SKILLS ════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">// 02. TECHNICAL_SKILLS</div>
+      <h2 class="section-title">SKILL SET</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ EXPERIENCE ════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">// 03. EXPERIENCE</div>
+      <h2 class="section-title">TIMELINE</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot active"></div>
+        <div class="tl-card">
+          <div class="tl-date">2022 — PRESENT</div>
+          <div class="tl-title">B.E. Electronics & Communication Engineering</div>
+          <div class="tl-org">Adhiparasakthi College of Engineering · Anna University</div>
+          <div class="tl-desc">
+            Pursuing a BE in ECE with a CGPA of 7.9. Developing a strong foundation
+            in electronics, communication systems, programming, and software development
+            through coursework and self-directed study.
+          </div>
+          <span class="tl-badge">ONGOING · 2022–2026</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">AUGUST 2025 · 4 DAYS</div>
+          <div class="tl-title">Life Skills Program</div>
+          <div class="tl-org">Global Team Track Foundation · Kalavai</div>
+          <div class="tl-desc">
+            Attended an intensive 4-day life skills program conducted by Global Team Track
+            Foundation at Adhiparasakthi College of Engineering, Kalavai (6th–11th August 2025).
+            Focused on teamwork, communication, and professional development.
+          </div>
+          <span class="tl-badge">CERTIFIED · COMPLETED</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">2026 — UPCOMING</div>
+          <div class="tl-title">Aspiring Full Stack Developer</div>
+          <div class="tl-org">Open to Opportunities</div>
+          <div class="tl-desc">
+            Actively seeking entry-level Full Stack Developer roles where I can apply
+            knowledge of Java, databases, and web technologies, and grow within a
+            collaborative engineering team.
+          </div>
+          <span class="tl-badge" style="border-color:var(--amber2);color:var(--amber);background:rgba(255,179,0,.08);">FRESHER · OPEN TO HIRE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROJECTS ════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">// 04. PROJECTS</div>
+      <h2 class="section-title">BUILDS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card reveal">
+        <div class="proj-num">01</div>
+        <div class="proj-title">Student Grade Manager</div>
+        <div class="proj-desc">A Java-based console application to manage student records, compute grades, and store results using MySQL backend with JDBC connectivity.</div>
+        <div class="proj-tags">
+          <span class="tag tag-green">Java</span>
+          <span class="tag tag-cyan">MySQL</span>
+          <span class="tag tag-amber">JDBC</span>
+        </div>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-num">02</div>
+        <div class="proj-title">Portfolio Website</div>
+        <div class="proj-desc">Responsive personal portfolio built with HTML, CSS, and JavaScript showcasing projects, skills, and contact details with a modern terminal-inspired UI.</div>
+        <div class="proj-tags">
+          <span class="tag tag-green">HTML</span>
+          <span class="tag tag-cyan">CSS</span>
+          <span class="tag tag-amber">JavaScript</span>
+        </div>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-num">03</div>
+        <div class="proj-title">Notes REST API</div>
+        <div class="proj-desc">RESTful API built with Python (Flask) and MongoDB for CRUD operations on notes. Features JSON responses, error handling, and basic authentication.</div>
+        <div class="proj-tags">
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-cyan">MongoDB</span>
+          <span class="tag tag-amber">Flask</span>
+        </div>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-num">04</div>
+        <div class="proj-title">DSA Visualizer</div>
+        <div class="proj-desc">Web-based data structure and algorithm visualizer built to reinforce understanding of sorting, searching, and graph traversal concepts with step-by-step animations.</div>
+        <div class="proj-tags">
+          <span class="tag tag-green">HTML</span>
+          <span class="tag tag-cyan">JavaScript</span>
+          <span class="tag tag-amber">DSA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">// 05. CONTACT</div>
+      <h2 class="section-title">CONNECT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>
+          Open to entry-level Full Stack Developer roles, internships, and
+          collaborative projects. Let's build something together.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ksn2425@gmail.com" class="contact-link-item">
+            <span class="cli-icon">📧</span>
+            <span>Email</span>
+            <span class="cli-val">ksn2425@gmail.com</span>
+          </a>
+          <a href="tel:9150708264" class="contact-link-item">
+            <span class="cli-icon">📱</span>
+            <span>Phone</span>
+            <span class="cli-val">+91 9150708264</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nithish-ks-277b702a6" target="_blank" class="contact-link-item">
+            <span class="cli-icon">🔗</span>
+            <span>LinkedIn</span>
+            <span class="cli-val">nithish-ks-277b702a6</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="iterm-box">
+          <div class="iterm-titlebar">
+            <div class="tb-dot tb-dot-r"></div>
+            <div class="tb-dot tb-dot-y"></div>
+            <div class="tb-dot tb-dot-g"></div>
+            <span style="margin-left:8px;">contact@nithish:~ — bash</span>
+          </div>
+          <div class="iterm-body" id="iterm-body">
+            <div class="iterm-output" style="color:var(--green)">NKS PORTFOLIO_OS Contact Terminal v1.0</div>
+            <div class="iterm-output" style="color:var(--text2)">Type <span style="color:var(--amber)">help</span> to see available commands.</div>
+            <div class="iterm-output">&nbsp;</div>
+          </div>
+          <div class="iterm-input-row">
+            <span class="iterm-prompt">visitor@nithish:~$</span>
+            <input id="term-input" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <span>PORTFOLIO_OS v1.0 &nbsp;·&nbsp; <span class="fl">Nithish K.S</span></span>
+  <span style="color:var(--green2);">All systems nominal.</span>
+  <span>Built with <span class="fl">&lt;/&gt;</span> &amp; ☕</span>
+</footer>
+
+<!-- ════════════════ JS ════════════════ -->
+<script>
+/* ── CURSOR ── */
+const cur  = document.getElementById('cursor');
+const curT = document.getElementById('cursor-trail');
+let mx = 0, my = 0, tx = 0, ty = 0;
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cur.style.left = mx + 'px';
+  cur.style.top  = my + 'px';
+});
+setInterval(() => {
+  tx += (mx - tx) * .15;
+  ty += (my - ty) * .15;
+  curT.style.left = tx + 'px';
+  curT.style.top  = ty + 'px';
+}, 16);
+
+/* ── CLOCK ── */
+function tick() {
+  const d = new Date();
+  const p = n => String(n).padStart(2,'0');
+  document.getElementById('live-clock').textContent =
+    `${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+}
+tick(); setInterval(tick, 1000);
+
+/* ── BIOS BOOT ── */
+(function biosSequence() {
+  const lines  = document.querySelectorAll('#bios .bios-line');
+  const fill   = document.getElementById('boot-fill');
+  const delay  = [0,180,360,520,660,820,1000,1180,1340,1500,1700];
+  lines.forEach((el, idx) => {
+    setTimeout(() => { el.style.opacity = '1'; }, delay[idx] || idx * 160);
+  });
+
+  let pct = 0;
+  const barTimer = setInterval(() => {
+    pct = Math.min(pct + Math.random() * 7 + 2, 100);
+    fill.style.width = pct + '%';
+    if (pct >= 100) {
+      clearInterval(barTimer);
+      setTimeout(() => {
+        const bios = document.getElementById('bios');
+        bios.style.transition = 'opacity .6s';
+        bios.style.opacity = '0';
+        setTimeout(() => bios.style.display = 'none', 600);
+        startTyping();
+        initSkillBars();
+        initReveal();
+      }, 500);
+    }
+  }, 60);
+})();
+
+/* ── TYPING EFFECT HERO ── */
+function startTyping() {
+  const lines = [
+    'echo "Hello, World!"',
+    'Hello, World!',
+    '',
+    'ls skills/',
+    'java  html  css  python  mysql  mongodb  dsa  sql',
+    '',
+    'ssh recruit@nithish.dev -p 22'
+  ];
+  let lineIdx = 0, charIdx = 0;
+  const el = document.getElementById('typed-output');
+  let content = '';
+
+  function type() {
+    if (lineIdx >= lines.length) return;
+    const line = lines[lineIdx];
+    if (charIdx < line.length) {
+      content += line[charIdx];
+      el.textContent = content;
+      charIdx++;
+      setTimeout(type, 45 + Math.random() * 30);
+    } else {
+      content += '\n';
+      charIdx = 0; lineIdx++;
+      setTimeout(type, lineIdx < lines.length ? 300 : 0);
+      el.innerHTML = content.split('\n').map((l, i) => {
+        if (!l) return '<br>';
+        if (i === 0 || content.split('\n')[i-1] === '') {
+          return `<span style="display:block"><span class="t-prompt">nithish</span><span style="color:var(--text2)">@</span><span class="t-path">portfolio</span><span style="color:var(--text2)">:~$</span> <span style="color:#fff">${l}</span></span>`;
+        }
+        return `<span style="display:block;color:var(--text2)">${l}</span>`;
+      }).join('');
+    }
+  }
+  setTimeout(type, 400);
+}
+
+/* ── SKILLS DATA ── */
+const skills = [
+  { name: 'Java',    icon: '☕', pct: 80 },
+  { name: 'HTML',    icon: '🌐', pct: 85 },
+  { name: 'CSS',     icon: '🎨', pct: 80 },
+  { name: 'Python',  icon: '🐍', pct: 72 },
+  { name: 'MySQL',   icon: '🗄️',  pct: 75 },
+  { name: 'MongoDB', icon: '🍃', pct: 65 },
+  { name: 'SQL',     icon: '📊', pct: 75 },
+  { name: 'DSA',     icon: '🔗', pct: 70 },
+];
+
+function initSkillBars() {
+  const grid = document.getElementById('skills-grid');
+  skills.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'skill-card reveal';
+    card.innerHTML = `
+      <div class="skill-icon">${s.icon}</div>
+      <div class="skill-name">${s.name}</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="${s.pct}"></div></div>
+      <div class="skill-pct">${s.pct}%</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+/* ── INTERSECTION OBSERVER (reveal + skill bars) ── */
+function initReveal() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        const bar = entry.target.querySelector('.skill-bar-fill');
+        if (bar) setTimeout(() => bar.style.width = bar.dataset.pct + '%', 200);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+}
+
+/* ── INTERACTIVE TERMINAL ── */
+const termBody  = document.getElementById('iterm-body');
+const termInput = document.getElementById('term-input');
+
+const commands = {
+  help: () => [
+    '<span style="color:var(--amber)">Available commands:</span>',
+    '  <span style="color:var(--green)">about</span>      — Who is Nithish?',
+    '  <span style="color:var(--green)">skills</span>     — List technical skills',
+    '  <span style="color:var(--green)">contact</span>    — Get contact details',
+    '  <span style="color:var(--green)">hire</span>       — Initiate hiring sequence',
+    '  <span style="color:var(--green)">education</span>  — Academic details',
+    '  <span style="color:var(--green)">clear</span>      — Clear terminal',
+    '  <span style="color:var(--green)">whoami</span>     — Identity check',
+  ],
+  about: () => [
+    '<span style="color:var(--cyan)">» Nithish K.S</span>',
+    '  Motivated ECE undergraduate from Adhiparasakthi College of Engineering.',
+    '  Aspiring Full Stack Developer with a passion for Java and web tech.',
+    '  CGPA: <span style="color:var(--green)">7.9</span> | Status: <span style="color:var(--green)">Available to hire</span>',
+  ],
+  skills: () => [
+    '<span style="color:var(--cyan)">» Technical Skills:</span>',
+    ...skills.map(s => `  <span style="color:var(--green)">${s.name.padEnd(10)}</span> <span style="color:var(--text2)">${'█'.repeat(Math.floor(s.pct/10))}${'░'.repeat(10-Math.floor(s.pct/10))}</span> ${s.pct}%`),
+  ],
+  contact: () => [
+    '<span style="color:var(--cyan)">» Contact Info:</span>',
+    '  Email   : <span style="color:var(--amber)">ksn2425@gmail.com</span>',
+    '  Phone   : <span style="color:var(--amber)">+91 9150708264</span>',
+    '  LinkedIn: <span style="color:var(--amber)">nithish-ks-277b702a6</span>',
+  ],
+  hire: () => [
+    '<span style="color:var(--green)">Initiating hiring sequence...</span>',
+    '  [■■■■■■■■■■] 100%',
+    '<span style="color:var(--amber)">→ Send an email to ksn2425@gmail.com</span>',
+    '<span style="color:var(--green)">✓ Nithish is excited to hear from you!</span>',
+  ],
+  education: () => [
+    '<span style="color:var(--cyan)">» Education:</span>',
+    '  Degree  : <span style="color:var(--green)">B.E. Electronics & Communication Engineering</span>',
+    '  College : Adhiparasakthi College of Engineering',
+    '  Univ    : Anna University',
+    '  CGPA    : <span style="color:var(--amber)">7.9</span>',
+    '  Period  : 2022 — 2026',
+  ],
+  whoami: () => [
+    '<span style="color:var(--green)">nithish</span>',
+    'uid=1000(nithish) gid=1000(dev) groups=1000(dev),4(fullstack),24(java)',
+  ],
+  clear: () => '__CLEAR__',
+};
+
+function termPrint(lines) {
+  lines.forEach(l => {
+    const d = document.createElement('div');
+    d.className = 'iterm-output';
+    d.innerHTML = l;
+    termBody.appendChild(d);
+  });
+  termBody.scrollTop = termBody.scrollHeight;
+}
+
+termInput.addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const raw = termInput.value.trim();
+  termInput.value = '';
+  if (!raw) return;
+
+  const echo = document.createElement('div');
+  echo.className = 'iterm-output';
+  echo.innerHTML = `<span style="color:var(--text2)">visitor@nithish:~$</span> <span style="color:#fff">${raw}</span>`;
+  termBody.appendChild(echo);
+
+  const cmd = raw.toLowerCase().split(' ')[0];
+  if (commands[cmd]) {
+    const result = commands[cmd]();
+    if (result === '__CLEAR__') {
+      termBody.innerHTML = '';
+    } else {
+      termPrint(result);
+      const blank = document.createElement('div');
+      blank.className = 'iterm-output';
+      blank.innerHTML = '&nbsp;';
+      termBody.appendChild(blank);
+    }
+  } else {
+    termPrint([
+      `<span style="color:var(--red)">command not found: ${raw}</span>`,
+      `Type <span style="color:var(--amber)">help</span> for available commands.`
+    ]);
+  }
+  termBody.scrollTop = termBody.scrollHeight;
+});
+</script>
+</body>
+</html>
